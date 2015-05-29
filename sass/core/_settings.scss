@@ -1,0 +1,88 @@
+// *************************************
+// Settings
+// *************************************
+
+// Media query fix
+// ---------------
+$fix-mqs: false !default;
+
+
+// Susy settings
+// -------------
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+
+// Default colors
+// --------------
+$black-color: #000000;
+$white-color: #ffffff;
+
+
+$gray-light:   #eeeeee;
+$gray-normal:  #b8b8b8;
+$gray-dark:    #454545;
+
+
+$blue-normal:   #2952a1;
+$yellow-normal: #fac52a;
+
+
+// Default backgrounds
+// -------------------
+$def-background: #fff;
+$def-color: #6f6f6f;
+
+
+// Default css rules
+// -----------------
+$def-font-family: Arial;
+$def-line-height: 1.4;
+
+
+// Font sizes
+// ----------
+$def-font-size: 13px;
+$big-font-size: 17px;
+$large-font-size: 25px;
+
+
+// Font-families
+// -------------
+
+@font-face {
+    
+}
+
+// @font-face {
+//     font-family: 'PTSansBold';
+//     src: url('../fonts/pts75f.eot');
+//     src: url('../fonts/pts75f.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/pts75f.woff') format('woff'),
+//          url('../fonts/pts75f.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+
+
+// Breakpoints
+// -----------
+$screen-mobile-small: 500px;
+$screen-mobile: 725px;
+$screen-tablet: 960px;
+$break-mobile-small: max-width $screen-mobile-small;
+$break-mobile: (min-width $screen-mobile-small + 1) (max-width $screen-mobile);
+$break-tablet: (min-width $screen-mobile + 1) (max-width $screen-tablet);
+$break-desktop: min-width $screen-tablet + 1;
+$break-mobile-all: $break-mobile-small, $break-mobile;
+$break-mobile-and-up: $break-mobile, $break-tablet, $break-desktop;
+$break-tablet-and-up: $break-tablet, $break-desktop;
+$break-mobile-and-tablet: $break-mobile, $break-tablet;
+
+

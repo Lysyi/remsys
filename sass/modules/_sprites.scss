@@ -1,0 +1,22 @@
+// Import all shared sprites
+// -------------------------
+// Shared means that these sprites will be used across all pages
+
+
+$ico-layout: smart;
+@import "ico/*.png";
+@include all-ico-sprites;
+
+.ico-sprite-27 {
+  @extend .ico-sprite;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+
+.ico-sprite-20 {
+  @extend .ico-sprite;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,55 @@
+// *************************************
+// Header component
+// *************************************
+
+
+.header-container {
+  height: 134px;
+  background-color: $white-color;
+}
+
+.main-logo {
+  float: left;
+  width: 225px;
+  margin: 25px 0 0 0;
+  .main-logo-link {
+    display: block;
+    height: 70px;
+    background-image: url('/images/main-logo.png');
+  }
+}
+
+.header-content {
+  float: right;
+  margin: 30px 0 0 0;
+  text-align: right;
+}
+
+.header-search-form {
+  @include clearfix();
+  padding: 10px 0 5px 0px;
+}
+
+.header-search-button {
+  float: left;
+  width: 29px;
+  height: 29px;
+  background-color: $gray-normal;
+  border: none;
+}
+
+.header-search-input {
+  float: left;
+  width: 210px;
+  height: 29px;
+  border: solid $gray-normal 1px;
+}
+
+
+// $breakpoint-no-query-fallbacks: true;
+// .element {
+//   color: blue;
+//   @include susy-breakpoint(480px, $susy, '.no-mq') {
+//     color: red;
+//   }
+// }

@@ -1,0 +1,86 @@
+// *************************************
+// Typography
+// *************************************
+
+@import 'settings';
+
+
+// Headings
+// --------
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: $def-font-family;
+  line-height: 1;
+}
+
+h1, .c-h1, %c-h1 {
+  font-size: 40px;
+}
+
+h2, .c-h2, %c-h2 {
+  font-size: 35px;
+}
+
+h3, .c-h3, %c-h3 {
+  font-size: 30px;
+}
+
+h4, .c-h4, %c-h4 {
+  font-size: 25px;
+}
+
+h5, .c-h5, %c-h5 {
+  font-size: 20px;
+}
+
+h6, .c-h6, %c-h6 {
+  font-size: 16px;
+}
+
+
+// Utilities
+// ---------
+
+%c-center, .c-center {
+  text-align: center;
+}
+
+%c-left, .c-left {
+  text-align: left
+}
+
+%c-condense, .c-condense {
+  font-size: 85%;
+}
+
+%c-lead, .c-lead {
+  font-size: 125%;
+}
+
+%c-underline, .c-underline {
+  text-decoration: underline;
+}
+
+%c-no-decoration, .c-no-decoration {
+  text-decoration: none;
+}
+
+%c-bold, .c-bold {
+  font-weight: bold;
+}
+
+
+
+// Font sizes
+// ----------
+
+.c-font-size-normal {
+  font-size: $def-font-size;
+}
+.c-font-size-big {
+  font-size: $big-font-size;
+}
+.c-font-size-large {
+  font-size: $large-font-size;
+}

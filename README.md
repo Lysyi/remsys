@@ -42,5 +42,4 @@ If you decide to use the production mode, use the following command:
 grunt build
 ```
 
-Special thanks to [Rob Decker](http://chapterthree.com/blog/theme-development-grunt-livereload-lint-uglify-oh-my) for putting together the Gruntfile.js
   

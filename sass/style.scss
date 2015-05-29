@@ -1,1 +1,104 @@
+
 @import 'compass';
+@import 'compass/reset';
+@import 'susy';
+@import "compass/layout/";
+@import "compass/utilities";
+@import "compass/css3";
+
+
+// Import core
+// -----------
+@import 'core/settings';
+@import 'core/content';
+@import 'core/base';
+@import 'core/layout';
+
+
+// // Import modules
+// // --------------
+@import 'modules/sprites';
+@import 'modules/header';
+@import 'modules/footer';
+
+
+@include sticky-footer(90px, ".wrapper-container", ".layout_footer", ".footer-container");
+
+.wrapper-container {
+  background-color: $gray-light;
+}
+
+.wrapper-block {
+  @include clearfix;
+  padding: 30px 0 0 0;
+}
+
+.main-menu-container {
+  @include border-top-right-radius(10px);
+  @include border-bottom-right-radius(10px);
+  position: relative;
+  float: left;
+  width: 280px;
+  margin-bottom: 50px;
+  padding: 18px 0 18px 0;
+  background-color: $gray-normal;
+}
+
+.main-menu {
+  margin: 0 46px 60px 36px;
+  .main-menu-item {
+    div {
+      @include border-radius(25px);
+      float: left;
+      width: 46px;
+      height: 46px;
+      padding-top: 8px;
+      background-color: $yellow-normal;
+      text-align: center;
+    }
+    a {
+      display: block;
+      margin: 0 0 0 56px;
+      padding: 19px 0 15px 0;
+      border-bottom: solid $white-color 1px;
+      color: #fff;
+      font-weight: $big-font-size;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        color: $blue-normal;
+      }
+      &.active {
+        color: $blue-normal !important;
+      }
+    }
+  }
+}
+.user-list {
+  margin: 0 0 60px 36px;
+  .user-list-item {
+    span {
+      float: left;
+      margin: -3px 10px 0 0;
+    }
+    padding: 0 0 10px 0;
+    color: $white-color;
+  }
+}
+
+.main-menu-clicker {
+  @include border-top-left-radius(10px);
+  @include border-bottom-left-radius(10px);
+  position: absolute;
+  width: 27px; 
+  height: 133px;
+  top: 50%;
+  right: 0;
+  margin: -80px 0 0 0;
+  background-color: $white-color;
+}
+
+.main-content-container {
+  margin: 0 0 0 300px;
+}
+

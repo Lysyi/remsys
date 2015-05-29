@@ -1,0 +1,520 @@
+/* line 5, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {}
+@font-face {}
+/* line 11, ../sass/core/_content.scss */
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: Arial;
+  line-height: 1;
+}
+
+/* line 17, ../sass/core/_content.scss */
+h1, .c-h1 {
+  font-size: 40px;
+}
+
+/* line 21, ../sass/core/_content.scss */
+h2, .c-h2 {
+  font-size: 35px;
+}
+
+/* line 25, ../sass/core/_content.scss */
+h3, .c-h3 {
+  font-size: 30px;
+}
+
+/* line 29, ../sass/core/_content.scss */
+h4, .c-h4 {
+  font-size: 25px;
+}
+
+/* line 33, ../sass/core/_content.scss */
+h5, .c-h5 {
+  font-size: 20px;
+}
+
+/* line 37, ../sass/core/_content.scss */
+h6, .c-h6 {
+  font-size: 16px;
+}
+
+/* line 45, ../sass/core/_content.scss */
+.c-center {
+  text-align: center;
+}
+
+/* line 49, ../sass/core/_content.scss */
+.c-left {
+  text-align: left;
+}
+
+/* line 53, ../sass/core/_content.scss */
+.c-condense {
+  font-size: 85%;
+}
+
+/* line 57, ../sass/core/_content.scss */
+.c-lead {
+  font-size: 125%;
+}
+
+/* line 61, ../sass/core/_content.scss */
+a, .c-underline {
+  text-decoration: underline;
+}
+
+/* line 65, ../sass/core/_content.scss */
+.c-no-decoration {
+  text-decoration: none;
+}
+
+/* line 69, ../sass/core/_content.scss */
+.c-bold {
+  font-weight: bold;
+}
+
+/* line 78, ../sass/core/_content.scss */
+.c-font-size-normal {
+  font-size: 13px;
+}
+
+/* line 81, ../sass/core/_content.scss */
+.c-font-size-big {
+  font-size: 17px;
+}
+
+/* line 84, ../sass/core/_content.scss */
+.c-font-size-large {
+  font-size: 25px;
+}
+
+@font-face {}
+/* line 21, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/susy-2.2.1/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 106, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 10, ../sass/core/_base.scss */
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #6f6f6f;
+  font-family: Arial;
+  font-size: 13px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 20, ../sass/core/_base.scss */
+a {
+  color: #6f6f6f;
+}
+
+/* line 25, ../sass/core/_base.scss */
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 30, ../sass/core/_base.scss */
+b {
+  font-weight: bold;
+}
+
+@font-face {}
+/* line 10, ../sass/core/_layout.scss */
+.content {
+  margin: auto;
+}
+
+/* line 18, ../sass/core/_layout.scss */
+.l-none {
+  display: none;
+}
+
+/* line 22, ../sass/core/_layout.scss */
+.l-block {
+  display: block;
+}
+
+/* line 26, ../sass/core/_layout.scss */
+.l-inline-block {
+  display: inline-block;
+}
+
+/* line 30, ../sass/core/_layout.scss */
+.l-pull-left {
+  float: left;
+}
+
+/* line 34, ../sass/core/_layout.scss */
+.l-pull-right {
+  float: right;
+}
+
+/* line 39, ../sass/core/_layout.scss */
+.l-clearfix:before, .l-clearfix:after {
+  content: '';
+  display: table;
+}
+/* line 44, ../sass/core/_layout.scss */
+.l-clearfix:after {
+  clear: both;
+}
+
+/* line 49, ../sass/core/_layout.scss */
+.l-clear-both {
+  clear: both;
+}
+
+/* line 53, ../sass/core/_layout.scss */
+.l-v-align-mid {
+  vertical-align: middle;
+}
+
+/* line 57, ../sass/core/_layout.scss */
+.l-v-align-bottom {
+  vertical-align: bottom;
+}
+
+/* line 61, ../sass/core/_layout.scss */
+.l-overflow-hidden {
+  overflow: hidden;
+}
+
+/* line 65, ../sass/core/_layout.scss */
+.l-no-border {
+  border: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 70, ../sass/core/_layout.scss */
+.l-relative {
+  position: relative;
+}
+
+/* line 112, ico/*.png */
+.ico-sprite, .ico-contact, .ico-download, .ico-help, .ico-man, .ico-monitoring, .ico-news, .ico-support, .ico-sutup, .ico-zoom, .ico-sprite-27, .ico-sprite-20 {
+  background-image: url('../images/ico-s1eeeaca484.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-contact {
+  background-position: 0 -195px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-download {
+  background-position: 0 -20px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-help {
+  background-position: 0 -87px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-man {
+  background-position: 0 -40px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-monitoring {
+  background-position: 0 -60px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-news {
+  background-position: 0 -114px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-support {
+  background-position: 0 -141px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-sutup {
+  background-position: 0 -168px;
+}
+
+/* line 84, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.ico-zoom {
+  background-position: 0 0;
+}
+
+/* line 10, ../sass/modules/_sprites.scss */
+.ico-sprite-27 {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+
+/* line 17, ../sass/modules/_sprites.scss */
+.ico-sprite-20 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+/* line 6, ../sass/modules/_header.scss */
+.header-container {
+  height: 134px;
+  background-color: #ffffff;
+}
+
+/* line 11, ../sass/modules/_header.scss */
+.main-logo {
+  float: left;
+  width: 225px;
+  margin: 25px 0 0 0;
+}
+/* line 15, ../sass/modules/_header.scss */
+.main-logo .main-logo-link {
+  display: block;
+  height: 70px;
+  background-image: url("/images/main-logo.png");
+}
+
+/* line 22, ../sass/modules/_header.scss */
+.header-content {
+  float: right;
+  margin: 30px 0 0 0;
+  text-align: right;
+}
+
+/* line 28, ../sass/modules/_header.scss */
+.header-search-form {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 10px 0 5px 0px;
+}
+
+/* line 33, ../sass/modules/_header.scss */
+.header-search-button {
+  float: left;
+  width: 29px;
+  height: 29px;
+  background-color: #b8b8b8;
+  border: none;
+}
+
+/* line 41, ../sass/modules/_header.scss */
+.header-search-input {
+  float: left;
+  width: 210px;
+  height: 29px;
+  border: solid #b8b8b8 1px;
+}
+
+/* line 6, ../sass/modules/_footer.scss */
+.footer-container {
+  background-color: #454545;
+  text-align: center;
+  color: #b8b8b8;
+}
+
+/* line 10, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.wrapper-container {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -90px;
+}
+/* line 18, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.wrapper-container .layout_footer {
+  height: 90px;
+}
+
+/* line 20, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+.footer-container {
+  clear: both;
+  position: relative;
+  height: 90px;
+}
+
+/* line 27, ../sass/style.scss */
+.wrapper-container {
+  background-color: #eeeeee;
+}
+
+/* line 31, ../sass/style.scss */
+.wrapper-block {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 30px 0 0 0;
+}
+
+/* line 36, ../sass/style.scss */
+.main-menu-container {
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  float: left;
+  width: 280px;
+  margin-bottom: 50px;
+  padding: 18px 0 18px 0;
+  background-color: #b8b8b8;
+}
+
+/* line 47, ../sass/style.scss */
+.main-menu {
+  margin: 0 46px 60px 36px;
+}
+/* line 50, ../sass/style.scss */
+.main-menu .main-menu-item div {
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  float: left;
+  width: 46px;
+  height: 46px;
+  padding-top: 8px;
+  background-color: #fac52a;
+  text-align: center;
+}
+/* line 59, ../sass/style.scss */
+.main-menu .main-menu-item a {
+  display: block;
+  margin: 0 0 0 56px;
+  padding: 19px 0 15px 0;
+  border-bottom: solid #ffffff 1px;
+  color: #fff;
+  font-weight: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 68, ../sass/style.scss */
+.main-menu .main-menu-item a:hover {
+  color: #2952a1;
+}
+/* line 71, ../sass/style.scss */
+.main-menu .main-menu-item a.active {
+  color: #2952a1 !important;
+}
+
+/* line 77, ../sass/style.scss */
+.user-list {
+  margin: 0 0 60px 36px;
+}
+/* line 79, ../sass/style.scss */
+.user-list .user-list-item {
+  padding: 0 0 10px 0;
+  color: #ffffff;
+}
+/* line 80, ../sass/style.scss */
+.user-list .user-list-item span {
+  float: left;
+  margin: -3px 10px 0 0;
+}
+
+/* line 89, ../sass/style.scss */
+.main-menu-clicker {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: absolute;
+  width: 27px;
+  height: 133px;
+  top: 50%;
+  right: 0;
+  margin: -80px 0 0 0;
+  background-color: #ffffff;
+}
+
+/* line 101, ../sass/style.scss */
+.main-content-container {
+  margin: 0 0 0 300px;
+}

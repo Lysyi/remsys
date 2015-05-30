@@ -72,45 +72,62 @@
 }
 
 
+// Add smart breakpoint
+// --------------------
+// In case $fix-mqs is set to true we will ignore all breakpoints
+// except desktop - we will include its content
+@mixin add-breakpoint($breakpoint) {
+  @if $fix-mqs {
+    @if $breakpoint == $break-desktop or (index($breakpoint, $break-desktop) != false) {
+      @content
+    }
+  }
+  @else {
+    @include breakpoint($breakpoint) {
+      @content;
+    }
+  }
+}
+
+
 // Helpers
 // -------
+@include add-breakpoint($break-mobile-small) {
+  .hidden-mobile-small { display: none!important; }
+}
 
-// @include add-breakpoint($break-mobile-small) {
-//   .hidden-mobile-small { display: none!important; }
-// }
+@include add-breakpoint($break-mobile) {
+  .hidden-mobile { display: none!important; }
+}
 
-// @include add-breakpoint($break-mobile) {
-//   .hidden-mobile { display: none!important; }
-// }
+@include add-breakpoint($break-tablet) {
+  .hidden-tablet { display: none!important; }
+}
 
-// @include add-breakpoint($break-tablet) {
-//   .hidden-tablet { display: none!important; }
-// }
+@include add-breakpoint($break-desktop) {
+  .hidden-desktop { display: none!important; }
+}
 
-// @include add-breakpoint($break-desktop) {
-//   .hidden-desktop { display: none!important; }
-// }
+@for $i from 0 through 6 {
+  .mar-top-#{$i * 5} {
+    margin-top: #{$i * 5}px!important;
+  };
+  .mar-btm-#{$i * 5} {
+    margin-bottom: #{$i * 5}px!important;
+  };
+  .pad-top-#{$i * 5} {
+    padding-top: #{$i * 5}px!important;
+  };
+  .pad-btm-#{$i * 5} {
+    padding-bottom: #{$i * 5}px!important;
+  };
+}
 
-// @for $i from 0 through 6 {
-//   .mar-top-#{$i * 5} {
-//     margin-top: #{$i * 5}px!important;
-//   };
-//   .mar-btm-#{$i * 5} {
-//     margin-bottom: #{$i * 5}px!important;
-//   };
-//   .pad-top-#{$i * 5} {
-//     padding-top: #{$i * 5}px!important;
-//   };
-//   .pad-btm-#{$i * 5} {
-//     padding-bottom: #{$i * 5}px!important;
-//   };
-// }
-
-// @for $i from 0 through 6 {
-//   .mar-left-#{$i * 5} {
-//     margin-left: #{$i * 5}px!important;
-//   };
-//   .mar-right-#{$i * 5} {
-//     margin-right: #{$i * 5}px!important;
-//   };
-// }
+@for $i from 0 through 6 {
+  .mar-left-#{$i * 5} {
+    margin-left: #{$i * 5}px!important;
+  };
+  .mar-right-#{$i * 5} {
+    margin-right: #{$i * 5}px!important;
+  };
+}

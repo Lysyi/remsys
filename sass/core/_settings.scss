@@ -76,6 +76,7 @@ $large-font-size: 25px;
 $screen-mobile-small: 500px;
 $screen-mobile: 725px;
 $screen-tablet: 960px;
+
 $break-mobile-small: max-width $screen-mobile-small;
 $break-mobile: (min-width $screen-mobile-small + 1) (max-width $screen-mobile);
 $break-tablet: (min-width $screen-mobile + 1) (max-width $screen-tablet);

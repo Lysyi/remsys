@@ -11,17 +11,18 @@
 .main-logo {
   float: left;
   width: 225px;
-  margin: 25px 0 0 0;
+  margin: 30px 0 0 10%;
   .main-logo-link {
     display: block;
     height: 70px;
     background-image: url('../images/main-logo.png');
+    background-size: 100%;
   }
 }
 
 .header-content {
   float: right;
-  margin: 30px 0 0 0;
+  margin: 30px 10% 0 0;
   text-align: right;
 }
 
@@ -45,11 +46,44 @@
   border: solid $gray-normal 1px;
 }
 
+// Mobile
+// -------------
+@include add-breakpoint($break-mobile-small) {
+  .header-container  {
+    height: 65px;
+  }
+  .main-logo {
+    float: none;
+    width: 113px;
+    margin: 0 auto;
+    padding-top: 15px;
+    .main-logo-link {
+      height: 35px;
+      background-image: url('../images/main-logo.png');
+    }
+  }
+  .header-content {
+    display: none;
+  }
+}
 
-// $breakpoint-no-query-fallbacks: true;
-//   body {
-//     border:solid blue 1px;
-//     @include susy-breakpoint(480px, $susy, '.no-mq') {
-//       border:solid red 1px;
-//   }
-// }
+// Mobile
+// -------------
+@include add-breakpoint($break-mobile-and-tablet) {
+  .header-container  {
+    height: 92px;
+  }
+  .main-logo {
+    float: none;
+    width: 200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    .main-logo-link {
+      height: 60px;
+      background-image: url('../images/main-logo.png');
+    }
+  }
+  .header-content {
+    display: none;
+  }
+}

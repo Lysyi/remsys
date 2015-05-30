@@ -3,12 +3,14 @@
 // *************************************
 
 @import 'settings';
+@import 'layout';
 
 @include border-box-sizing;
 @include establish-baseline;
 
 body {
   @include stretch;
+  min-width: 480px;
   background: $def-background;
   color: $def-color;
   font-family: $def-font-family;

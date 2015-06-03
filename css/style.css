@@ -483,7 +483,7 @@ body {
   right: 0;
   min-width: 480px;
   background: #fff;
-  color: #6f6f6f;
+  color: #333333;
   font-family: Arial;
   font-size: 13px;
   line-height: 1.4;
@@ -492,7 +492,7 @@ body {
 
 /* line 22, ../sass/core/_base.scss */
 a {
-  color: #6f6f6f;
+  color: #333333;
 }
 
 /* line 27, ../sass/core/_base.scss */
@@ -889,7 +889,7 @@ b {
 .main-logo {
   float: left;
   width: 225px;
-  margin: 30px 0 0 10%;
+  margin: 30px 0 0 140px;
 }
 /* line 15, ../sass/modules/_header.scss */
 .main-logo .main-logo-link {
@@ -902,7 +902,7 @@ b {
 /* line 23, ../sass/modules/_header.scss */
 .header-content {
   float: right;
-  margin: 30px 10% 0 0;
+  margin: 30px 140px 0 0;
   text-align: right;
 }
 
@@ -985,6 +985,33 @@ b {
   color: #b8b8b8;
 }
 
+/* line 12, ../sass/modules/_footer.scss */
+.footer-menu {
+  padding-top: 30px;
+  text-align: center;
+}
+
+/* line 17, ../sass/modules/_footer.scss */
+.footer-menu-item {
+  display: inline-block;
+  padding: 0 4px;
+  border-left: solid #a0a0a0 1px;
+  color: #a0a0a0;
+}
+/* line 22, ../sass/modules/_footer.scss */
+.footer-menu-item:first-child {
+  border: none;
+}
+/* line 25, ../sass/modules/_footer.scss */
+.footer-menu-item a {
+  text-decoration: none;
+  color: #a0a0a0;
+}
+/* line 28, ../sass/modules/_footer.scss */
+.footer-menu-item a:hover {
+  text-decoration: underline;
+}
+
 /* line 10, ../../../../../../../Users/Lysyi/.rvm/gems/ruby-2.1.2/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
@@ -1036,13 +1063,14 @@ html, body {
   margin-bottom: 50px;
   padding: 18px 0 18px 0;
   background-color: #b8b8b8;
+  overflow: hidden;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .main-menu {
   margin: 0 46px 60px 36px;
 }
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 .main-menu .main-menu-item div {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -1054,7 +1082,7 @@ html, body {
   background-color: #fac52a;
   text-align: center;
 }
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 .main-menu .main-menu-item a {
   display: block;
   margin: 0 0 0 56px;
@@ -1065,31 +1093,32 @@ html, body {
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 69, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 .main-menu .main-menu-item a:hover {
   color: #2952a1;
 }
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .main-menu .main-menu-item a.active {
   color: #2952a1 !important;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .user-list {
-  margin: 0 0 60px 36px;
+  padding: 0 0 60px 36px;
+  white-space: nowrap;
 }
-/* line 80, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .user-list .user-list-item {
   padding: 0 0 10px 0;
   color: #ffffff;
 }
-/* line 81, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .user-list .user-list-item span {
   float: left;
   margin: -3px 10px 0 0;
 }
 
-/* line 90, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .main-menu-clicker {
   -moz-border-radius-topleft: 10px;
   -webkit-border-top-left-radius: 10px;
@@ -1098,7 +1127,7 @@ html, body {
   -webkit-border-bottom-left-radius: 10px;
   border-bottom-left-radius: 10px;
   position: absolute;
-  width: 27px;
+  width: 30px;
   height: 133px;
   top: 50%;
   right: 0;
@@ -1106,7 +1135,65 @@ html, body {
   background-color: #ffffff;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .main-content-container {
-  margin: 0 0 0 300px;
+  min-width: 500px;
+  margin: 0 140px 0 300px;
+}
+
+/* line 114, ../sass/style.scss */
+.user-details-container {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 0 0 100px;
+  background-color: #ffffff;
+  border: solid #2952a1 1px;
+  border-top: none;
+}
+
+/* line 124, ../sass/style.scss */
+.h5-title {
+  -moz-border-radius-topleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 20px;
+  padding: 10px 0 10px 0;
+  background-color: #2952a1;
+  color: #fff;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* line 135, ../sass/style.scss */
+.details-form {
+  padding: 0 45px;
+}
+
+/* line 139, ../sass/style.scss */
+.form-row {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 143, ../sass/style.scss */
+.details-label {
+  float: left;
+  width: 130px;
+  font-size: 14px;
+}
+
+/* line 149, ../sass/style.scss */
+.details-input {
+  width: 294px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 34px;
+  border: solid #ccc 1px;
 }

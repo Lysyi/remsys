@@ -8,3 +8,25 @@
   text-align: center;
   color: $gray-normal;
 }
+
+.footer-menu {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.footer-menu-item {
+  display: inline-block;
+  padding: 0 4px;
+  border-left: solid #a0a0a0 1px;
+  color: #a0a0a0;
+  &:first-child {
+    border: none;
+  }
+  a {
+    text-decoration: none;
+    color: #a0a0a0;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

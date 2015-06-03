@@ -43,6 +43,7 @@
   margin-bottom: 50px;
   padding: 18px 0 18px 0;
   background-color: $gray-normal;
+  overflow: hidden;
 }
 
 .main-menu {
@@ -76,7 +77,8 @@
   }
 }
 .user-list {
-  margin: 0 0 60px 36px;
+  padding: 0 0 60px 36px;
+  white-space: nowrap;
   .user-list-item {
     span {
       float: left;
@@ -91,17 +93,63 @@
   @include border-top-left-radius(10px);
   @include border-bottom-left-radius(10px);
   position: absolute;
-  width: 27px; 
+  width: 30px; 
   height: 133px;
   top: 50%;
   right: 0;
   margin: -80px 0 0 0;
   background-color: $white-color;
+  &.active {
+    
+  }
 }
 
 .main-content-container {
-  margin: 0 0 0 300px;
+  min-width: 500px;
+  margin: 0 140px 0 300px;
 }
 
 
 
+.user-details-container {
+  @include border-top-left-radius(10px);
+  @include border-top-right-radius(10px);
+  margin: 0 0 0 100px;
+  background-color: $white-color;
+  border: solid $blue-normal 1px;
+  border-top: none;
+
+}
+
+.h5-title {
+  @include border-top-left-radius(10px);
+  @include border-top-right-radius(10px);
+  margin-bottom: 20px;
+  padding: 10px 0 10px 0;
+  background-color: $blue-normal;
+  color:#fff;
+  font-weight: normal;
+  text-align: center;
+}
+
+.details-form {
+  padding: 0 45px;
+}
+
+.form-row {
+  @include clearfix();
+}
+
+.details-label {
+  float: left;
+  width: 130px;
+  font-size: 14px;
+}
+
+.details-input {
+  width: 294px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 34px;
+  border: solid #ccc 1px;
+}
